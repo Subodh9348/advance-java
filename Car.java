@@ -1,13 +1,17 @@
-package com.subodh.connection;
+package program;
 
-import java.sql.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 public class Car {
 public static void main(String[] args) {
     try {
     	System.out.println("----------------");
         Connection con = DriverManager.getConnection
                 ("jdbc:oracle:thin:@//localhost:1522/orcl"
-,"system", "subodh");
+,"mydb11", "subodh");
          Statement stmt = con.createStatement();
          ResultSet rSet = stmt.executeQuery("select * from CAR");
          System.out.println("Details of cars: ");
@@ -23,7 +27,7 @@ public static void main(String[] args) {
          //System.out.println("Hello");
     }
     catch(Exception e) {
-       
+       System.out.println(e.getMessage());
     }
 }
 }
