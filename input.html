@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="order" method="post">
+		<h1>Order Your Pizza Here</h1>
+		Name:<input type="text" name="name"><br> Select The
+		Crust: <select name="deep">
+			<option value="">Deep Crust</option>
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+			<option value="D">D</option>
+		</select> <br>Toppings:<br> Peas:<input type="checkbox" value="Peas"
+			name="check"><br> Paneer:<input type="checkbox"
+			value="Paneer" name="check"><br> RedPapers:<input
+			type="checkbox" value="RedPapers" name="check"><br>
+		onion<input type="checkbox" value="onion" name="check"><br>
+		Tomato<input type="checkbox" value="Tomato" name="check"><br>
+		Chilli<input type="checkbox" value="Chilli" name="check"><br>
+		Potato<input type="checkbox" value="Potato" name="check"><br>
+		Select 1 Free Appetizer:<br> Garlic Bread:<input type="radio"
+			name="rd" value="Garlic Bread"> Cheeze Garlic Bread:<input
+			type="radio" name="rd" value="Cheeze Garlic Bread"> Veg Soup:<input
+			type="radio" name="rd" value="Veg Soup"> Veg Sandwich:<input
+			type="radio" name="rd" value="Veg Sandwich"> <br>Address:<br>
+		<textarea rows="5" cols="20" name="add"></textarea><br>
+		CreditCard Type:<br>
+		Visa:<input type="radio" name="card" value="Visa">
+		MasterCard:<input type="radio" name="card" value="MasterCard">
+		American Express:<input type="radio" name="card" value="American Express"><br>
+		CreditCardNumber:<input type="text" name="cardno">
+		RepeatCreditCardNumber:<input type="text" name="rcardno"><br>
+		<input type="submit" value="OrderPizza">
+	</form>
+</body>
+</html>
